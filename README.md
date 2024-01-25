@@ -4,7 +4,12 @@
 
 # How to run this project ?
 
-- You should have NodeJS insalled in your localhost machine [Download NodeJS](https://nodejs.org/en/)
+-------------------
+## Environment
+- Node v14.21.3
+- Python v2.7.18
+-------------------
+
 - Open Terminal
 - Navigate to Project Directory
 - Enter the following command `npm install` this will install all required dependencies
