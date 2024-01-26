@@ -12,10 +12,9 @@ const NavBar = () => (
       </a>
       <a
         className="btn-sm text-decoration-none bg-danger rounded-0 text-light"
-        href="https://www.instagram.com/sujeetvibes"
-        target="_blank"
+        href="https://MahtoSujeet.github.io/"
       >
-        <i className="fab text-light fa-linkedin"></i>
+        <i className="fab text-light fa-instagram"></i>
         &nbsp;  Sujeet Mahto
       </a>
     </span>
