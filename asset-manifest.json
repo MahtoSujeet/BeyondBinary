@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/BeyondBinary/static/css/main.fe2a8959.chunk.css",
-    "main.js": "/BeyondBinary/static/js/main.f3eb83ea.chunk.js",
-    "main.js.map": "/BeyondBinary/static/js/main.f3eb83ea.chunk.js.map",
+    "main.js": "/BeyondBinary/static/js/main.d34e4e4e.chunk.js",
+    "main.js.map": "/BeyondBinary/static/js/main.d34e4e4e.chunk.js.map",
     "runtime-main.js": "/BeyondBinary/static/js/runtime-main.d551f7e4.js",
     "runtime-main.js.map": "/BeyondBinary/static/js/runtime-main.d551f7e4.js.map",
     "static/css/2.f3497eb8.chunk.css": "/BeyondBinary/static/css/2.f3497eb8.chunk.css",
     "static/js/2.8e1db393.chunk.js": "/BeyondBinary/static/js/2.8e1db393.chunk.js",
     "static/js/2.8e1db393.chunk.js.map": "/BeyondBinary/static/js/2.8e1db393.chunk.js.map",
     "index.html": "/BeyondBinary/index.html",
-    "precache-manifest.eb32a37df262947425bfafac9ab6c526.js": "/BeyondBinary/precache-manifest.eb32a37df262947425bfafac9ab6c526.js",
+    "precache-manifest.51dceb8f7d034a932cce24e3cc5f3175.js": "/BeyondBinary/precache-manifest.51dceb8f7d034a932cce24e3cc5f3175.js",
     "service-worker.js": "/BeyondBinary/service-worker.js",
     "static/css/2.f3497eb8.chunk.css.map": "/BeyondBinary/static/css/2.f3497eb8.chunk.css.map",
     "static/css/main.fe2a8959.chunk.css.map": "/BeyondBinary/static/css/main.fe2a8959.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.f3497eb8.chunk.css",
     "static/js/2.8e1db393.chunk.js",
     "static/css/main.fe2a8959.chunk.css",
-    "static/js/main.f3eb83ea.chunk.js"
+    "static/js/main.d34e4e4e.chunk.js"
   ]
 }
