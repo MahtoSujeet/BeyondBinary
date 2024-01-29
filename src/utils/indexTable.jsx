@@ -32,8 +32,8 @@ export default class IndexTable extends React.Component {
     return (
       <div className="container mt-3">
         <div className="text-center text-light">
-          <h1 style={maskStyles} className="maskText mt-1">
-            Problem Solving using Intelligence
+          <h1 style={maskStyles} className="maskText mt-1 glowing">
+            Algo Tactics
           </h1>
           <p className="mt-2">Developed by <span className="text-danger">Sujeet & Ritika</span></p>
         </div>

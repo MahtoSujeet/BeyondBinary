@@ -24,6 +24,7 @@ body {
 .tabs {
   display: none;
 }
+
 .shadowB {
   box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -45,4 +46,25 @@ body {
 
 .bg-red {
   background-color: #f53d56;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 0px #fff;
+  }
+
+  50% {
+    text-shadow: 0px 0px 10px #fff, 0 0 30px #fff;
+  }
+
+  100% {
+    text-shadow: 0 0 0px #fff;
+  }
+}
+
+.glowing {
+  font-size: 52px;
+  color: #fff;
+  text-align: center;
+  animation: glow 2s infinite;
 }
