@@ -173,6 +173,15 @@ export default class PathFinder extends React.Component {
           .classList.remove("node-shortest-path");
       }
     }
+
+    //TODO
+    // document.getElementById(`node-${this.state.FINISH_NODE_ROW}-${this.state.FINISH_NODE_COL}`).querySelector('img').remove();
+    // const container = document.getElementById(`node-${this.state.FINISH_NODE_ROW}-${this.state.FINISH_NODE_COL}`);
+    // const imageToDelete = container.querySelector('img');
+    // if (imageToDelete) {
+    //   imageToDelete.remove();
+    // }
+
     this.setState({
       disableMazesButton: false,
       disableNodesButton: false,
@@ -201,6 +210,12 @@ export default class PathFinder extends React.Component {
         }
       }
     }
+    // TODO
+    // const container = document.getElementById(`node-${this.state.FINISH_NODE_ROW}-${this.state.FINISH_NODE_COL}`);
+    // const imageToDelete = container.querySelector('img');
+    // if (imageToDelete) {
+    //   imageToDelete.remove();
+    // }
     this.setState({
       disableMazesButton: true,
       disableNodesButton: true,
@@ -332,6 +347,17 @@ export default class PathFinder extends React.Component {
     });
     const mazeGrid = generateMaze(grid);
     this.setState({ grid: mazeGrid });
+
+    const newImg = document.createElement('img');
+    newImg.src = '/BeyondBinary/face100.png';
+    newImg.style.padding = 0
+    newImg.style.margin = 0
+    newImg.style.position = "absolute"
+    newImg.style.transform = "translate(-40%, -80%)"
+    this.newImg = newImg
+
+    document.getElementById(`node-${this.state.START_NODE_ROW}-${this.state.START_NODE_COL}`).appendChild(this.newImg)
+
   }
 
   modifyNodeState(STATE) {
@@ -440,6 +466,8 @@ export default class PathFinder extends React.Component {
   }
 
   animateShortestPath(nodesInShortestPathOrder = []) {
+
+
     for (let i = 0; i < nodesInShortestPathOrder.length; i++) {
       setTimeout(() => {
         const node = nodesInShortestPathOrder[i];
@@ -447,14 +475,8 @@ export default class PathFinder extends React.Component {
         if (!node.isStart && !node.isFinish && !node.isWall) {
           document.getElementById(`node-${node.row}-${node.col}`).classList =
             "node node-shortest-path";
-          document.getElementById(`node-${node.row}-${node.col}`).style.cssText = `
-                background: url("/BeyondBinary/face100.png");
-                background-position: center;
-                background-size: cover;
-                overflow: visible;
-                transform: scale(2.5);`
-          document.getElementById(`node-${prevNode.row}-${prevNode.col}`).style.cssText = `
-                background: "#ea2027"`
+
+          document.getElementById(`node-${node.row}-${node.col}`).appendChild(this.newImg)
 
         }
         if (node.isFinish) {
@@ -562,7 +584,8 @@ export default class PathFinder extends React.Component {
                 <Button
                   disabled={disableClearMazeButton}
                   variant="danger"
-                  onClick={() => this.clearBoard()}
+                  // onClick={() => this.clearBoard()}
+                  onClick={() => window.location.reload()}
                 >
                   Clear Maze
                 </Button>
