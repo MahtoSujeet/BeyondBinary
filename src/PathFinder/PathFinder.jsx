@@ -1,7 +1,3 @@
-/**
- * @author Dipesh Vinod Patil <thedipeshpatil@gmail.com>
- */
-
 import React from "react";
 
 //  Importing Node Component to display Node on Grid
@@ -57,23 +53,30 @@ var ROWS, COLS;
 // For better responsiveness and interactivity.
 if (SCREEN_WIDTH > 1440 && SCREEN_WIDTH <= 2560) {
   // TVs and Large Screen Laptops
-  ROWS = 61;
-  COLS = 61;
-  SPEED = 10;
+  // ROWS = 61;
+  // COLS = 61;
+  ROWS = 20;
+  COLS = 20;
+  SPEED = 50; //10;
 } else if (SCREEN_WIDTH >= 768 && SCREEN_WIDTH <= 1440) {
   // Laptops & Tablets
+  // 53
   ROWS = 53;
   COLS = 53;
-  SPEED = 15;
+  // ROWS = 20;
+  // COLS = 20;
+  SPEED = 2;
 } else if (SCREEN_WIDTH > 425 && SCREEN_WIDTH <= 767) {
   // IPads and Smaller Laptops
-  ROWS = 47;
-  COLS = 47;
+  // 47
+  ROWS = 20;
+  COLS = 20;
   SPEED = 20;
 } else if (SCREEN_WIDTH >= 320 && SCREEN_WIDTH <= 425) {
   // Mobile Devices
-  ROWS = 37;
-  COLS = 37;
+  // 37
+  ROWS = 20;
+  COLS = 20;
   SPEED = 25;
 } else if (SCREEN_WIDTH >= 120 && SCREEN_WIDTH <= 319) {
   // Mobile Devices with Smaller Screens
@@ -440,9 +443,19 @@ export default class PathFinder extends React.Component {
     for (let i = 0; i < nodesInShortestPathOrder.length; i++) {
       setTimeout(() => {
         const node = nodesInShortestPathOrder[i];
+        const prevNode = (i > 0) ? nodesInShortestPathOrder[i - 1] : { row: this.state.START_NODE_ROW, col: this.state.START_NODE_COL };
         if (!node.isStart && !node.isFinish && !node.isWall) {
           document.getElementById(`node-${node.row}-${node.col}`).classList =
             "node node-shortest-path";
+          document.getElementById(`node-${node.row}-${node.col}`).style.cssText = `
+                background: url("/BeyondBinary/face100.png");
+                background-position: center;
+                background-size: cover;
+                overflow: visible;
+                transform: scale(2.5);`
+          document.getElementById(`node-${prevNode.row}-${prevNode.col}`).style.cssText = `
+                background: "#ea2027"`
+
         }
         if (node.isFinish) {
           setTimeout(() => {
@@ -487,7 +500,7 @@ export default class PathFinder extends React.Component {
                         const { row, col, isStart, isFinish, isWall } = cell;
                         return (
                           <Node
-                            key={`${row}-${col}`}
+                            key={`${row} -${col} `}
                             col={col}
                             isFinish={isFinish}
                             isStart={isStart}

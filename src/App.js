@@ -40,13 +40,13 @@ export default class App extends React.Component {
       <div>
         <NavBar />
         <Route exact path="/" component={IndexTable} />
+        <Route path="/n-queens-problem" component={NQueensProblem} />
         <Route path="/sorting" component={SortingVisualiser} />
         <Route path="/searching" component={searchCombined} />
-        <Route path="/n-queens-problem" component={NQueensProblem} />
         <Route path="/rat-in-a-maze" component={RatInAMazeProblem} />
         <Route path="/pathfinder" component={PathFinder} />
         <Route path="/word-search" component={WordSearch} />
-        <Route path="/filling" component={Filling} />
+        {/*<Route path="/filling" component={Filling} />*/}
       </div>
     );
   }
