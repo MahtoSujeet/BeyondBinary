@@ -50,7 +50,7 @@ body {
 
 @keyframes glow {
   0% {
-    text-shadow: 0 0 0px #fff;
+    // text-shadow: 0 0 0px #fff;
   }
 
   50% {
@@ -58,13 +58,12 @@ body {
   }
 
   100% {
-    text-shadow: 0 0 0px #fff;
+    // text-shadow: 0 0 0px #fff;
   }
 }
 
 .glowing {
   font-size: 52px;
-  color: #fff;
   text-align: center;
   animation: glow 2s infinite;
 }

@@ -253,10 +253,7 @@ export default class NQueensProblem extends React.Component {
                     <div className="mt-2"></div>
                     The Visualiser works best for board sizes between 4 and 8
                     inclusive. Larger board sizes would make the page
-                    unresponsive because of huge number of computations. &nbsp;
-                    <a href="https://github.com/MahtoSujeet/BeyondBinary/tree/main/src/backTrackingAlgorithms">
-                      GitHub Repo for this project
-                    </a>
+                    unresponsive because of huge number of computations.
                   </small>
                 </center>
               ) : null}
