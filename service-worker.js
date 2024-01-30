@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/BeyondBinary/precache-manifest.1b635f6bbd78e5c4c67332540e409340.js"
+  "/BeyondBinary/precache-manifest.8341bcef1b623477784d88abf652c258.js"
 );
 
 self.addEventListener('message', (event) => {
