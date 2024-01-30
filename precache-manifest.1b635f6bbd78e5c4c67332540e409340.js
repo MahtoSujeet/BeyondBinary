@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "10a762551b341abb4add125dd33185a4",
+    "revision": "d1c297625b932d780ef48e7f6e0ad220",
     "url": "/BeyondBinary/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BeyondBinary/static/css/2.f3497eb8.chunk.css"
   },
   {
-    "revision": "53e34b13d624b756a2c2",
-    "url": "/BeyondBinary/static/css/main.83ce7692.chunk.css"
+    "revision": "9f0c752c3fc18c41e7a4",
+    "url": "/BeyondBinary/static/css/main.9abff316.chunk.css"
   },
   {
     "revision": "52b90e6f7af6cd3bc9b8",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BeyondBinary/static/js/2.7acc7ac3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "53e34b13d624b756a2c2",
-    "url": "/BeyondBinary/static/js/main.b708dc2a.chunk.js"
+    "revision": "9f0c752c3fc18c41e7a4",
+    "url": "/BeyondBinary/static/js/main.cd0a7acc.chunk.js"
   },
   {
     "revision": "12dd4c58795a818a40f6",
