@@ -100,15 +100,15 @@ export default class IndexTable extends React.Component {
               </NavLink>
             </div> */}
           </div>
-          <div className="w-4">
+          <div style={{ overflowX: "hidden" }} className="w-4">
 
-            <video className="android-video__asset" preload="metadata" muted playsinline="" autoPlay aria-label="an Android droid peeks its head up through a circle" poster="https://lh3.googleusercontent.com/mcO0LnHc_OwhSGXAgiqwRzwRQ2wt-ROz9cNsDhlrp2AYDOjgCbCosiTPrR8nDD_ETavR-EslLEncx1VKZkH0HPmtivCP2Vdvfrjip74SeWcD8RPqlpY" loop><source src="https://kstatic.googleusercontent.com/files/b27bbf3c8514d30efd3910abb73dafdfeebc474dd2f599f1e49f2e55aadae3eda60f7936109d932856e8519f46064f9aca9f653910a6988f8402c9935854273d" type="video/webm" /><source src="https://kstatic.googleusercontent.com/files/be090837f1a14cee5c237f52033bb3e075fdd20a873f5c29c0e3a73707d6902931396af69fe929bc95401edec5c71e1f15acfd412ccc4a477871ccbc7cdd7d1c" type="video/quicktime" /></video>
+            <video className="android-video__asset" preload="metadata" muted playsInline="" autoPlay aria-label="an Android droid peeks its head up through a circle" poster="https://lh3.googleusercontent.com/mcO0LnHc_OwhSGXAgiqwRzwRQ2wt-ROz9cNsDhlrp2AYDOjgCbCosiTPrR8nDD_ETavR-EslLEncx1VKZkH0HPmtivCP2Vdvfrjip74SeWcD8RPqlpY" loop><source src="https://kstatic.googleusercontent.com/files/b27bbf3c8514d30efd3910abb73dafdfeebc474dd2f599f1e49f2e55aadae3eda60f7936109d932856e8519f46064f9aca9f653910a6988f8402c9935854273d" type="video/webm" /><source src="https://kstatic.googleusercontent.com/files/be090837f1a14cee5c237f52033bb3e075fdd20a873f5c29c0e3a73707d6902931396af69fe929bc95401edec5c71e1f15acfd412ccc4a477871ccbc7cdd7d1c" type="video/quicktime" /></video>
           </div>
           <div className="text-center text-light mt-4">
             Copyright Reserved by Sujeet (2024)
           </div>
-        </center>
-      </div>
+        </center >
+      </div >
     );
   }
 }

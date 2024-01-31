@@ -349,7 +349,7 @@ export default class PathFinder extends React.Component {
     this.setState({ grid: mazeGrid });
 
     const newImg = document.createElement('img');
-    newImg.src = '/BeyondBinary/face100.png';
+    newImg.src = '/algotechniques/face100.png';
     newImg.style.padding = 0
     newImg.style.margin = 0
     newImg.style.position = "absolute"
