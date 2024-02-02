@@ -97,12 +97,12 @@ export default class SortingVisualiser extends React.Component {
       case 3:
         this.insertionSort();
         break;
-      case 4:
-        this.quickSort();
-        break;
-      case 5:
-        this.heapSort();
-        break;
+      // case 4:
+      //   this.quickSort();
+      //   break;
+      // case 5:
+      //   this.heapSort();
+      //   break;
       case 6:
         this.mergeSort();
         break;
@@ -236,8 +236,8 @@ export default class SortingVisualiser extends React.Component {
                   <option value="1">Bubble Sort</option>
                   <option value="2">Selection Sort</option>
                   <option value="3">Insertion Sort</option>
-                  <option value="4">Quick Sort</option>
-                  <option value="5">Heap Sort</option>
+                  {/*<option value="4">Quick Sort</option>*/}
+                  {/*<option value="5">Heap Sort</option>*/}
                   <option value="6">Merge Sort</option>
                 </Form.Control>
                 <InputGroup.Append>

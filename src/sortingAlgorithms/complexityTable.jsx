@@ -17,26 +17,26 @@ const ComplexityTable = () => (
           <td className="text-danger table-danger">Worst</td>
           <td></td>
         </tr>
-        <tr>
+        {/*<tr>
           <td className="text-warning">Heap Sort</td>
           <td>N&times;Log N</td>
           <td>N&times;Log N</td>
           <td>1</td>
-        </tr>
+        </tr>*/}
         <tr>
           <td className="text-warning">Merge Sort</td>
           <td>N&times;Log N</td>
           <td>N&times;Log N</td>
           <td>N</td>
         </tr>
-        <tr>
+        {/*<tr>
           <td className="text-warning">Quick Sort</td>
           <td>N&times;Log N</td>
           <td>
             N<sup>2</sup>
           </td>
           <td>Log N</td>
-        </tr>
+        </tr>*/}
         <tr>
           <td className="text-warning">Bubble Sort</td>
           <td>N</td>

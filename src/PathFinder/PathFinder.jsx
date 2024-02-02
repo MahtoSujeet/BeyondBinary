@@ -611,7 +611,7 @@ export default class PathFinder extends React.Component {
                     <option value="1">Dijkstras</option>
                     <option value="2">Breadth First Search</option>
                     <option value="5">Depth First Search</option>
-                    <option value="3">A* Search</option>
+                    {/*<option value="3">A* Search</option>*/}
                     <option value="4">Bi-Directional Search</option>
                   </Form.Control>
                   <InputGroup.Append>
